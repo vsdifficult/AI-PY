@@ -1,0 +1,2 @@
+opencv_createsamples.exe -info D:\AI python project\learning\cascade_trening\good.dat -vec samples.vec -w 20 -h 20 # для положительных 
+opencv_traincascade.exe -data haarcascade -vec samples.vec -bg D:\AI python project\learning\cascade_trening\bad.dat -numStages 16 -minhitrate 0.999 -maxFalseAlarmRate 0.4 -numPos 200 -numNeg 500 -w 20 -h 20 -mode ALL -precalcValBufSize 1024 -precalcIdxBufSize 1024
